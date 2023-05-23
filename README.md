@@ -17,7 +17,7 @@ O Desafio consiste em reproduzir o layout de uma galeria com exposição de imag
 <br>
 
 <p align="center">
-  <img src="https://github.com/pablokaliel/boracodar-17/assets/104238801/49cbc38b-9ab0-443a-bfd0-ae4a6693cdee" width="100%">
+  <img src="https://github.com/pablokaliel/boracodar-17/assets/104238801/131500ef-5a44-4fc6-969a-042a84e7819f" width="100%">
 </p>
 
 ## 🚀 Tecnologias
