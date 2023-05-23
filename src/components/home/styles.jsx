@@ -13,6 +13,17 @@ export const Swapper = styled.div`
 
   padding: 140px 100px 0px 111px;
   overflow: auto; /* Adicionado para habilitar a rolagem caso o conteúdo exceda a altura */
+
+  @media (max-width: 770px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  @media (max-width: 1075px) {
+    padding: 20px;
+  }
 `;
 
 export const DivInfo = styled.header`
@@ -26,6 +37,19 @@ export const DivInfo = styled.header`
     font-weight: 400;
     line-height: 60px;
   }
+
+  @media (max-width: 770px) {
+    width: 100%;
+    position:static;
+
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+    h1{
+      font-size: 32px;
+    }
+  }
 `;
 
 export const DivImages = styled.div`
@@ -35,7 +59,10 @@ export const DivImages = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  padding: 20px;
+  @media (max-width: 770px) {
+  padding: 0px;
+  width: 100%;
+  }
 `;
 
 export const ColumnOne = styled.div`
@@ -45,20 +72,36 @@ export const ColumnOne = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 16px;
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `;
 
 export const DivImg = styled.div`
   position: relative;
   height: 100%;
   overflow: hidden;
+
   &:hover {
     border: 3px solid white; /* Adicionado para aplicar a borda */
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+    max-width: 100%;
   }
 `;
 
 export const DivImgOne = styled.div`
   position: relative;
   height: 100%;
+
+  @media (max-width: 780px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 export const DivImgFull = styled.div`
   grid-row: 1 / 3;
@@ -66,12 +109,22 @@ export const DivImgFull = styled.div`
   justify-self: start;
   overflow: hidden;
 
+  @media (max-width: 780px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
   &:hover {
     border: 3px solid white; /* Adicionado para aplicar a borda */
   }
 `;
 export const DivImgFullEnd = styled(DivImgFull)`
   justify-self: end;
+
+  @media (max-width: 780px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const CaptionImage = styled.span`
@@ -89,7 +142,6 @@ export const CaptionImage = styled.span`
 
   visibility: hidden;
   opacity: 0;
-  z-index: 2;
   transition: visibility 700ms, opacity 700ms ease-in-out;
 
   ${DivImg}:hover & {
@@ -107,6 +159,7 @@ export const ImageFullWidth = styled.img`
   width: 100%;
   height: 100%;
   transition: 700ms ease-in-out;
+  max-width: 100%;
 
   &:hover {
     transform: scale(1.9);
@@ -117,6 +170,7 @@ export const ImageHalfWidth = styled.img`
   height: 100%;
   width: 100%;
   transition: 700ms ease-in-out;
+  max-width: 100%;
 
   &:hover {
     transform: scale(1.9);
@@ -126,6 +180,7 @@ export const ImageOne = styled.img`
   width: 100%;
   height: 400px;
   transition: 700ms ease-in-out;
+  max-width: 100%;
 
   &:hover {
     transform: scale(1.9);
