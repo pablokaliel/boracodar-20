@@ -6,17 +6,21 @@ export const Container = styled.div`
 `;
 
 export const Swapper = styled.div`
- padding: 140px 100px 0px 111px;
+  height: 100vh; /* Adicionado para definir uma altura */
+
   display: flex;
   justify-content: space-between;
-  height: 100vh; /* Adicionado para definir uma altura */
+
+  padding: 140px 100px 0px 111px;
   overflow: auto; /* Adicionado para habilitar a rolagem caso o conteúdo exceda a altura */
 `;
 
 export const DivInfo = styled.header`
- width: 380px;
+  width: 380px;
+
   position: sticky;
   top: 0px;
+
   h1 {
     font-size: 48px;
     font-weight: 400;
@@ -26,18 +30,20 @@ export const DivInfo = styled.header`
 
 export const DivImages = styled.div`
   width: 800px;
-  padding: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 20px;
 `;
 
 export const ColumnOne = styled.div`
+  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 100%;
-
   gap: 16px;
 `;
 
@@ -45,23 +51,23 @@ export const DivImg = styled.div`
   position: relative;
   height: 100%;
   overflow: hidden;
-
+  &:hover {
+    border: 3px solid white; /* Adicionado para aplicar a borda */
+  }
 `;
 
 export const DivImgOne = styled.div`
   position: relative;
   height: 100%;
-  :hover {
-    border: 3px solid white;
-  }
 `;
 export const DivImgFull = styled.div`
   grid-row: 1 / 3;
   position: relative;
   justify-self: start;
   overflow: hidden;
-  :hover {
-    border: 3px solid white;
+
+  &:hover {
+    border: 3px solid white; /* Adicionado para aplicar a borda */
   }
 `;
 export const DivImgFullEnd = styled(DivImgFull)`
@@ -72,12 +78,15 @@ export const CaptionImage = styled.span`
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 100%;
   padding: 8px;
+
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 14px;
   text-align: center;
+
   visibility: hidden;
   opacity: 0;
   z-index: 2;
@@ -100,7 +109,7 @@ export const ImageFullWidth = styled.img`
   transition: 700ms ease-in-out;
 
   &:hover {
-    transform:  scale(1.9);
+    transform: scale(1.9);
   }
 `;
 
@@ -110,7 +119,7 @@ export const ImageHalfWidth = styled.img`
   transition: 700ms ease-in-out;
 
   &:hover {
-    transform:  scale(1.9);
+    transform: scale(1.9);
   }
 `;
 export const ImageOne = styled.img`
@@ -119,6 +128,6 @@ export const ImageOne = styled.img`
   transition: 700ms ease-in-out;
 
   &:hover {
-    transform:  scale(1.9);
+    transform: scale(1.9);
   }
 `;
