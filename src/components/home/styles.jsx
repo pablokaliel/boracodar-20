@@ -82,7 +82,7 @@ export const CaptionImage = styled.span`
   width: 100%;
   padding: 8px;
 
-  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: white;
   font-size: 14px;
   text-align: center;
@@ -90,7 +90,7 @@ export const CaptionImage = styled.span`
   visibility: hidden;
   opacity: 0;
   z-index: 2;
-  transition: visibility 0s, opacity 0.2s;
+  transition: visibility 700ms, opacity 700ms ease-in-out;
 
   ${DivImg}:hover & {
     visibility: visible;
