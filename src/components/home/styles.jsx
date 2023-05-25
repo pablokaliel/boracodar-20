@@ -196,6 +196,9 @@ export const ImageFullWidth = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
+    @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 
 export const ImageHalfWidth = styled.img`
@@ -208,6 +211,9 @@ export const ImageHalfWidth = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
+    @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 export const ImageOne = styled.img`
   width: 100%;
@@ -219,4 +225,7 @@ export const ImageOne = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
+    @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
