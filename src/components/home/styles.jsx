@@ -41,9 +41,9 @@ export const Swapper = styled.div`
 
   @media (max-width: 1075px) {
     padding: 20px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -61,13 +61,13 @@ export const DivInfo = styled.header`
 
   @media (max-width: 770px) {
     width: 100%;
-    position:static;
+    position: static;
 
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 
-    h1{
+    h1 {
       font-size: 32px;
     }
   }
@@ -81,8 +81,8 @@ export const DivImages = styled.div`
   gap: 16px;
 
   @media (max-width: 770px) {
-  padding: 0px;
-  width: 100%;
+    padding: 0px;
+    width: 100%;
   }
 `;
 
@@ -104,7 +104,7 @@ export const DivImg = styled.div`
   position: relative;
   height: 100%;
   overflow: hidden;
-  border-radius:8px; 
+  border-radius: 8px;
   &:hover {
     border: 3px solid white; /* Adicionado para aplicar a borda */
   }
@@ -134,7 +134,7 @@ export const DivImgFull = styled.div`
     width: 100%;
     max-width: 100%;
   }
-  border-radius:8px; 
+  border-radius: 8px;
   &:hover {
     border: 3px solid white; /* Adicionado para aplicar a borda */
   }
@@ -195,17 +195,19 @@ export const ImageFullWidth = styled.img`
   &:hover {
     transform: scale(1.9);
   }
+  object-fit: cover;
 `;
 
 export const ImageHalfWidth = styled.img`
   height: 100%;
-  width: 100%;
+  width: 400px;
   transition: 700ms ease-in-out;
   max-width: 100%;
 
   &:hover {
     transform: scale(1.9);
   }
+  object-fit: cover;
 `;
 export const ImageOne = styled.img`
   width: 100%;
@@ -216,4 +218,5 @@ export const ImageOne = styled.img`
   &:hover {
     transform: scale(1.9);
   }
+  object-fit: cover;
 `;

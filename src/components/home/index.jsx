@@ -14,19 +14,6 @@ import {
   CaptionImage,
 } from "./styles";
 
-import img1 from "../../assets/img1.png";
-import img2 from "../../assets/img2.png";
-import img3 from "../../assets/img3.png";
-import img4 from "../../assets/img4.png";
-import img5 from "../../assets/img5.png";
-import img6 from "../../assets/img6.png";
-import img7 from "../../assets/img7.png";
-import img8 from "../../assets/img8.png";
-import img9 from "../../assets/arteabstrata.jpg";
-import img10 from "../../assets/pinturaamarelo.jpeg";
-import img11 from "../../assets/arteabstrata3.jpg";
-import img12 from "../../assets/arte-manchas.jpg";
-
 import arrow from "../../assets/arrowdown.svg";
 
 function Home() {
@@ -36,74 +23,74 @@ function Home() {
 
         <DivInfo>
           <h1>The - Abstract Gallery</h1>
-          <img src={arrow} />
+          <img  src={arrow} alt="seta para baixo apontando para direita"/>
         </DivInfo>
 
         <DivImages>
 
           <ColumnOne>
             <DivImg>
-              <ImageHalfWidth src={img1} />
-              <CaptionImage>ON WHITE II (1923)</CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada a Floresta" src="https://source.unsplash.com/random/?forest" /></a>
+              <CaptionImage>Image the florest</CaptionImage>
             </DivImg>
             <DivImg>
-              <ImageHalfWidth src={img2} />
-              <CaptionImage>TABLEAU I (1921)</CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada a Cidade a noite" src="https://source.unsplash.com/random/?city,night" /></a>
+              <CaptionImage>Image The Night City</CaptionImage>
             </DivImg>
             <DivImgFull>
-              <ImageFullWidth src={img3} />
-              <CaptionImage>SUPREMATISMO (1915)</CaptionImage>
+              <a href="#!"><ImageFullWidth alt="Imagem Aleatoria relacionada a abstrato" src="https://source.unsplash.com/random/?abstract" /></a>
+              <CaptionImage>Image Abstract</CaptionImage>
             </DivImgFull>
           </ColumnOne>
 
           <DivImgOne>
             <DivImg>
-              <ImageOne src={img8} />
-              <CaptionImage>SENECIO (1922)</CaptionImage>
+              <a href="#!"><ImageOne alt="Imagem Aleatoria relacionada ao universo" src="https://source.unsplash.com/random/?universe" /></a>
+              <CaptionImage>Image The Universe</CaptionImage>
             </DivImg>
           </DivImgOne>
 
           <ColumnOne>
             <DivImgFullEnd>
-              <ImageFullWidth src={img5} />
-              <CaptionImage> BLUE AND GREEN MUSIC (1919-1921)</CaptionImage>
+              <a href="#!"><ImageFullWidth alt="Imagem Aleatoria relacionada ao ceu" src="https://source.unsplash.com/random/?sky" /></a>
+              <CaptionImage> Sky Image</CaptionImage>
             </DivImgFullEnd>
             <DivImg>
-              <ImageHalfWidth src={img4} />
-              <CaptionImage>THE FLAME – 1938 –</CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada a planetas " src="https://source.unsplash.com/random/?planet" /></a>
+              <CaptionImage>Image Of Planets</CaptionImage>
             </DivImg>
             <DivImg>
-              <ImageHalfWidth src={img6} />
-              <CaptionImage>APRÈS SEURAT (1988) </CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada ao sol" src="https://source.unsplash.com/random/?sun" /></a>
+              <CaptionImage>Sun Image </CaptionImage>
             </DivImg>
           </ColumnOne>
 
           <DivImgOne>
             <DivImg>
-              <ImageOne src={img7} />
-              <CaptionImage>MANABU MABE(1997)</CaptionImage>
+              <a href="#!"><ImageOne alt="Imagem Aleatoria relacionada a gelo" src="https://source.unsplash.com/random/?ice" /></a>
+              <CaptionImage>Ice Image</CaptionImage>
             </DivImg>
           </DivImgOne>
 
           <ColumnOne>
             <DivImg>
-              <ImageHalfWidth src={img9} />
-              <CaptionImage>Insula Dulcamara</CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada a àgua" src="https://source.unsplash.com/random/?water" /></a>
+              <CaptionImage>Water Image</CaptionImage>
             </DivImg>
             <DivImg>
-              <ImageHalfWidth src={img10} />
-              <CaptionImage>Bottle of Rum and Newspaper</CaptionImage>
+              <a href="#!"><ImageHalfWidth alt="Imagem Aleatoria relacionada a natureza" src="https://source.unsplash.com/random/?nature" /></a>
+              <CaptionImage>Nature Image</CaptionImage>
             </DivImg>
             <DivImgFull>
-              <ImageFullWidth src={img11} />
-              <CaptionImage> Black in deep red</CaptionImage>
+              <a href="#!"><ImageFullWidth alt="Imagem Aleatoria relacionada a dia" src="https://source.unsplash.com/random/?day" /></a>
+              <CaptionImage>Day Image</CaptionImage>
             </DivImgFull>
           </ColumnOne>
 
           <DivImgOne>
             <DivImg>
-              <ImageOne src={img12} />
-              <CaptionImage>Concetto spaziale 'Attesa'</CaptionImage>
+              <a href="#!"><ImageOne alt="Imagem Aleatoria relacionada a noite" src="https://source.unsplash.com/random/?night" /></a>
+              <CaptionImage>Night Image</CaptionImage>
             </DivImg>
           </DivImgOne>
 
