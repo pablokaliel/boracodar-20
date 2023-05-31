@@ -42,4 +42,8 @@ export default createGlobalStyle`
     border-radius: 14px;
     border: 3px solid var(--primary);
   }
+
+  img {
+    aspect-ratio:1/1;
+  }
 `;

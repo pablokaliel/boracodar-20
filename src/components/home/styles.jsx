@@ -88,18 +88,42 @@ export const DivImages = styled.div`
 
 export const ColumnOne = styled.div`
   width: 100%;
-  height: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 16px;
 
-  @media (max-width: 780px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  grid-template-rows: 300px 300px 400px; // Define 3 linhas com altura igual
 
-    //row:vertical
-    //column:horizontal
+  .one {
+    grid-row: 1 / 3; // Estende a imagem por duas linhas
+    aspect-ratio: 9/16;
+  }
+
+  .three {
+    grid-row: 1 / 3; // Estende a imagem por duas linhas
+    grid-column: 2;
+    aspect-ratio: 9/16;
+  }
+
+  .model-1 {
+    aspect-ratio: 1/1;
+    display: grid;
+  }
+
+  .model-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 300px); // Define 3 linhas com altura igual
+  }
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr; // Altera para uma única coluna
+    grid-template-rows: auto; // Redefine a altura das linhas
+
+    .one,
+    .three {
+      grid-row: auto; // Redefine a posição da imagem nas linhas
+      grid-column: auto; // Redefine a posição da imagem nas colunas
+      aspect-ratio: unset; // Remove a proporção de aspecto definida
+    }
   }
 `;
 
@@ -124,18 +148,19 @@ export const DivImg = styled.div`
 
 export const DivImgOne = styled.div`
   position: relative;
-  height: 100%;
-
+  grid-column: 1/3;
   @media (max-width: 780px) {
     width: 100%;
     max-width: 100%;
+    grid-column:1;
+    gap:16px;
   }
 `;
 export const DivImgFull = styled.div`
-  grid-row: 1 / 3;
   position: relative;
-  justify-self: start;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
   filter: grayscale(100%);
 
   transition: all 0.5s ease-in;
@@ -215,7 +240,7 @@ export const ImageFullWidth = styled.img`
 
 export const ImageHalfWidth = styled.img`
   height: 100%;
-  width: 400px;
+  width: 100%;
   transition: 700ms ease-in-out;
   max-width: 100%;
 
@@ -229,7 +254,7 @@ export const ImageHalfWidth = styled.img`
 `;
 export const ImageOne = styled.img`
   width: 100%;
-  height: 400px;
+  height: 100%;
   transition: 700ms ease-in-out;
   max-width: 100%;
 
