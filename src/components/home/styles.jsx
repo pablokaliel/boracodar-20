@@ -24,13 +24,13 @@ export const Container = styled.div`
 `;
 
 export const Swapper = styled.div`
-  height: 100vh; /* Adicionado para definir uma altura */
+  height: 100vh;
 
   display: flex;
   justify-content: space-between;
 
   padding: 140px 100px 0px 111px;
-  overflow: auto; /* Adicionado para habilitar a rolagem caso o conteúdo exceda a altura */
+  overflow: auto;
 
   @media (max-width: 770px) {
     width: 100%;
@@ -97,6 +97,9 @@ export const ColumnOne = styled.div`
   @media (max-width: 780px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+
+    //row:vertical
+    //column:horizontal
   }
 `;
 
@@ -105,13 +108,17 @@ export const DivImg = styled.div`
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in;
   &:hover {
-    border: 3px solid white; /* Adicionado para aplicar a borda */
+    border: 3px solid white;
+    filter: grayscale(0%);
   }
 
   @media (max-width: 780px) {
     width: 100%;
     max-width: 100%;
+    filter: grayscale(0%);
   }
 `;
 
@@ -129,14 +136,19 @@ export const DivImgFull = styled.div`
   position: relative;
   justify-self: start;
   overflow: hidden;
+  filter: grayscale(100%);
+
+  transition: all 0.5s ease-in;
 
   @media (max-width: 780px) {
+    filter: grayscale(0%);
     width: 100%;
     max-width: 100%;
   }
   border-radius: 8px;
   &:hover {
-    border: 3px solid white; /* Adicionado para aplicar a borda */
+    border: 3px solid white;
+    filter: grayscale(0%);
   }
 `;
 export const DivImgFullEnd = styled(DivImgFull)`
@@ -196,7 +208,7 @@ export const ImageFullWidth = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
-    @media (max-width: 780px) {
+  @media (max-width: 780px) {
     width: 100%;
   }
 `;
@@ -211,7 +223,7 @@ export const ImageHalfWidth = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
-    @media (max-width: 780px) {
+  @media (max-width: 780px) {
     width: 100%;
   }
 `;
@@ -225,7 +237,7 @@ export const ImageOne = styled.img`
     transform: scale(1.9);
   }
   object-fit: cover;
-    @media (max-width: 780px) {
+  @media (max-width: 780px) {
     width: 100%;
   }
 `;
